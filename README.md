@@ -21,7 +21,7 @@ This project uses next/font to automatically optimize and load Inter, a custom G
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/joaoVictorS/challenge-coinSynch.git
+$ git clone https://github.com/igorvargasp/challenge-coinSynch.git
 
 # Acesse a pasta do projeto no terminal
 $ cd challenge-coinSynch
