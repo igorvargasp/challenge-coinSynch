@@ -1,0 +1,89 @@
+.menu{
+    position: absolute;
+    width: 60%;
+    height: 1500px;
+    background:  #FFFFFF ;
+    z-index: 7;
+    margin-top: 96px;
+    display: block;
+    margin-left: 40%;
+    display: flex;
+    box-shadow: 0px 4px 8px rgba(77, 77, 77, 0.1);
+}
+.links{
+    color: #FBAB34;
+
+    span{
+        color: #5D6670;
+        padding: 0px;
+        margin-left:-10px;
+        font-size: 15px;
+        text-align: left;
+        
+    }
+    .spanHome{
+        width: 300px;
+        position: absolute;
+        margin-top: 62px;
+        margin-left: 300px;
+        font-size: 16px;
+        padding:10px;
+        padding-left: 50px;
+        border-bottom: 1px solid #FBAB34;
+    }
+    .spanAbout{
+        width: 300px;
+        position: absolute;
+        margin-top: 150px;
+        padding:10px;
+        padding-left: 50px;
+        margin-left: 300px;
+        border-bottom: 1px solid #FBAB34;
+    }
+    .spanCryptos{
+        width: 300px;
+        position: absolute;
+        margin-top: 240px;
+        margin-left: 300px;
+        padding:10px;
+        padding-left: 50px;
+        border-bottom: 1px solid #FBAB34;
+    }
+}
+.btnMenuSingin{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 150%!important;
+    width: 80px;
+    padding: 10px!important;
+    border: 1px solid #FBAB34;
+}
+.btnMenuSingup{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 50%!important;
+    width: 70px;
+    padding: 10px!important;
+    border: 1px solid #FBAB34;
+  
+}
+.iconMenu{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.iconMenuAbout{
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 40px;
+}
+.iconMenuTop{
+    position: absolute;
+    margin-top: 235px;
+    margin-left: 40px;
+}
+@media (min-width:450px) {
+.menu{
+    display: none;
+}
+}

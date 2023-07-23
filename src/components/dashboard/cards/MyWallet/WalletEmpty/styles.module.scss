@@ -1,0 +1,38 @@
+.container {
+  height: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container_center {
+    display: flex;
+    flex-direction: column;
+    .box_image {
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box_text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 8px;
+      padding-top: 28px;
+      .wallet_bold {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        color: #5d6670;
+      }
+      .wallet_regular {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #5d6670;
+      }
+    }
+  }
+}

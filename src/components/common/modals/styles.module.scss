@@ -1,0 +1,34 @@
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-text;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;  
+  z-index: 6;
+
+}
+
+.close_btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}

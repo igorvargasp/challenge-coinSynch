@@ -1,0 +1,281 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 448px;
+}
+.titleAdd {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #5d6670;
+  text-align: center;
+  font-weight: 700;
+}
+.headerTransferInOut {
+  height: 40px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.titleAddOut {
+  .youAreTransfering {
+    color: rgba(172, 171, 183, 1);
+    font-weight: 100;
+  }
+}
+.headerTransferInOut {
+  display: flex;
+  justify-content: center;
+}
+.titleAddOut img {
+  position: absolute;
+  display: inline-block;
+  margin-left: -13px;
+  margin-top: 6px;
+}
+
+.titleAddOut span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d6670;
+  text-align: center;
+  font-weight: 700;
+  align-items: center;
+  padding: 15px;
+
+  span {
+    position: relative;
+    font-weight: 100;
+    color: #5d6670;
+  }
+}
+.boxmodal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.titlemodal {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #c1c6cb;
+  height: 50px;
+  span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #5d6670;
+  }
+}
+.titleAddOut {
+  .nameCryptoTransfer {
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -12px;
+  }
+}
+
+.title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: $color-text;
+  text-align: center;
+
+  span {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 700;
+    color: $color-secondary;
+
+    span {
+      color: $color-primary-500;
+    }
+  }
+}
+.nametransfein {
+  .nameCryptoTransfer {
+    color: #5d6670;
+  }
+  .transferin {
+    color: #adb5bc;
+  }
+}
+.select select {
+  height: 50px;
+  background-color: black;
+}
+.select {
+  height: 50px;
+  outline: 1px solid #e0deea;
+  border-radius: 6px;
+  display: flex;
+  padding-left: 25px;
+}
+.titleAddCrypto {
+  span {
+    font-size: 24px;
+  }
+}
+.select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 15px;
+  color: #5d6670 !important;
+  padding-right: 80px;
+  border: none;
+  outline: none;
+  background: transparent;
+  appearance: none;
+  width: 100%;
+  font-size: 18px;
+  optgroup{
+    font-size: 20px;
+    border: 1px solid black;
+  }
+}
+.opt {
+  font-size: 30px !important;
+  background-color: #5d6670;
+}
+.password_group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .forgot_pass_btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-secondary;
+    align-self: flex-end;
+  }
+}
+
+.sign_custom_btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dont_have_an_account_btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-text;
+  gap: 4px;
+
+  span {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 700;
+
+    span:nth-child(1) {
+      color: $color-primary-500;
+    }
+
+    span:nth-child(2) {
+      color: $color-secondary-500;
+    }
+  }
+}
+
+@media (max-width: $break-point-tablet) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+  }
+}
+@media (max-width: 550px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 45vh;
+  }
+}
+@media (max-width: 450px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 30vh;
+  }
+}
+@media (max-width: 320px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 28vh;
+  }
+
+  .title {
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 32px;
+    color: $color-text;
+    text-align: center;
+
+    span {
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: 700;
+      color: $color-secondary;
+
+      span {
+        color: $color-primary-500;
+      }
+    }
+  }
+
+  .password_group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .forgot_pass_btn {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: $color-secondary;
+      align-self: flex-end;
+    }
+  }
+
+  .sign_custom_btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .dont_have_an_account_btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-text;
+    gap: 4px;
+
+    span {
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: 700;
+
+      span:nth-child(1) {
+        color: $color-primary-500;
+      }
+
+      span:nth-child(2) {
+        color: $color-secondary-500;
+      }
+    }
+  }
+}

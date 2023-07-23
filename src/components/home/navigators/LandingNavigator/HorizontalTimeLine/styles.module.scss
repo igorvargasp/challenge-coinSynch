@@ -1,0 +1,68 @@
+.wrapper {
+  overflow: hidden;
+	min-width: 250px;
+	width: 120%;
+  height: 32px;
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  gap: 20px;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.element {
+  display: flex;
+  gap: 30px;
+  font-family: $font-roboto;
+}
+
+.symbol {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-secondary-800;
+}
+
+.price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-text;
+  width: max-content;
+}
+
+.change {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.positive {
+  color: $color-tertiary-700;
+}
+
+.negative {
+  color: $color-quaternary-700;
+}
+
+@media (max-width: $break-point-tablet) {
+
+}

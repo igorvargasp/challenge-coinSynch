@@ -1,0 +1,32 @@
+.background {
+  background-color: $color-white;
+  padding-block: 120px;
+
+  .content {
+    margin-inline: auto;
+    max-width: $constraint-main-col;
+    padding-inline: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:32px;
+  }
+}
+
+.custom_btn {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: $color-primary;
+}
+
+@media (max-width: $break-point-tablet) {
+  .background {
+    padding-block: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .background {
+    padding-block: 140px;
+  }
+}

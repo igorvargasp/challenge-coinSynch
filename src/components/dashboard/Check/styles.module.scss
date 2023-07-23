@@ -1,0 +1,75 @@
+.wrapper_base {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@mixin input_wrapper {
+  input {
+    padding: 16px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+  }
+
+  input::placeholder {
+    color: $color-secondary-400;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  input:focus-visible {
+    outline: 2px solid $color-primary-800;
+  }
+}
+
+.error_message {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 4px;
+  font-size: 14px;
+  color: $color-quaternary-500;
+}
+
+// Different designs
+.filled {
+  @include input_wrapper;
+
+  label {
+    color: $color-white;
+  }
+}
+
+.ghost {
+  @include input_wrapper;
+
+  .input_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    outline: 1px solid $color-secondary-300;
+    border-radius: 6px;
+
+    input {
+      padding: 0;
+      border-radius: 0;
+    }
+
+    input:focus-visible {
+      outline: transparent;
+    }
+
+    &:focus-within {
+      outline: 1px solid $color-primary-500;
+    }
+  }
+}

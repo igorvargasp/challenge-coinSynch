@@ -1,0 +1,23 @@
+.base {
+  color: $color-text;
+  padding-block: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Button design options
+.primary {
+  padding-inline: 26.5px;
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 32px;
+}
+
+.ghost {
+  padding: 0px;
+  background-color: transparent;
+}
